@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="date">
+    <item>年</item>
+      <item>月</item>
+      <item>日</item>
+ </string-array>
+
+    <!--送货方式 -->
+    <string-array name="DistritType">
+        <item>送货上门</item>
+        <item>到店自提</item>
+    </string-array>
+
+    <!--送货时间 -->
+    <string-array name="DistritDate">
+        <item>08:00-11:00</item>
+        <item>14:00-17:00</item>
+        <item>18:00-20:00</item>
+    </string-array>
+
+    <string-array name="paytype">
+        <item>微笑卡</item>
+        <item>支付宝</item>
+        <!--<item>微信支付</item>-->
+    </string-array>
+
+</resources>

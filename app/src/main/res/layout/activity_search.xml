@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/white40"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/white40"
+        >
+        <ImageButton
+
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/actionbar_btnback_selector"
+            android:paddingLeft="@dimen/space_8"
+            android:paddingRight="@dimen/space_8"
+            android:contentDescription="@null"
+            android:src="@mipmap/ico_backarrow" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/space_12"
+            android:layout_marginTop="@dimen/space_12"
+            android:background="@color/white40" />
+         <EditText
+            android:id="@+id/edtsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="8dip"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/globle_search_icon"
+             android:paddingLeft="10dp"
+            android:drawablePadding="8dip"
+            android:hint="@string/pleaseinputsearch"
+            android:textSize="14sp"
+            android:textCursorDrawable="@null"
+            android:ems="10"
+            android:inputType="text"
+             android:textColor="@color/black"
+             android:textColorHint="@color/color_txt_grey1"
+             android:background="@drawable/textfield_normal"
+
+
+            >
+             <requestFocus />
+         </EditText>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/space_8"
+            android:paddingRight="@dimen/space_8"
+            android:paddingTop="5dp"
+            android:background="@drawable/btn_bg_transparent_selector"
+            android:contentDescription="@null"
+            android:textColor="@color/main_black"
+            android:text="搜索"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_background" />
+    <ListView
+        android:id="@+id/searchList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#c0c0c0"
+        android:dividerHeight="1px"
+        android:scrollbars="none" />
+
+    <include
+        android:id="@+id/empty_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        layout="@layout/empty_list"
+        >
+    </include>
+
+
+
+    <ProgressBar
+        android:id="@+id/prbloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>

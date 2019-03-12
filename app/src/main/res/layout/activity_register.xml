@@ -1,0 +1,235 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/title_light_gray"
+              tools:context="com.mkh.mobilemall.ui.activity.auth.RegisterActivity">
+
+        <com.fish.mkh.div.MkhTitleBar
+            android:id="@+id/mkh_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_background" />
+
+    <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/logo"
+            android:id="@+id/logo"/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_height="@dimen/input_line_height">
+
+            <EditText
+                    android:singleLine="true"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/input_line_height"
+                    android:layout_weight="1"
+                    android:hint="请输入您的手机号码"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:background="@drawable/textfield_normal"
+                    android:id="@+id/edtTxtPhone"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <EditText
+                    android:singleLine="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/input_line_height"
+                    android:inputType="textPassword"
+                    android:hint="@string/input_new_pwd_hint"
+                    android:ems="10"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:background="@drawable/textfield_normal"
+                    android:id="@+id/edtTxtPwd"
+                    android:paddingLeft="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:singleLine="true"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/input_line_height"
+                android:inputType="textPassword"
+                android:hint="@string/againinputpas"
+                android:ems="10"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:background="@drawable/textfield_normal"
+                android:id="@+id/reTxtPwd"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_width="fill_parent"
+                android:weightSum="1"
+                android:layout_height="wrap_content">
+
+            <EditText
+                    android:singleLine="true"
+                    android:layout_width="145dp"
+                    android:layout_height="@dimen/input_line_height"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:layout_weight="0.5"
+                    android:hint="@string/input_code_hint"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:background="@drawable/textfield_normal"
+                    android:id="@+id/edtTxtCode"
+                    android:paddingLeft="10dp"/>
+
+            <Button
+                    android:layout_weight="0.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/input_line_height"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="@string/btn_send_text"
+                    android:textSize="@dimen/text_size_18"
+                    android:textColor="@color/white"
+                    android:background="@drawable/send_code_button_enable"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:id="@+id/btnSend"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/input_line_height"
+                    android:textColor="@color/black"
+                    android:text="@string/check_bind_card"
+                    android:textSize="@dimen/text_size3"
+                    style="@style/green_round_checkbox"
+                    android:id="@+id/checkBindCard"
+                    android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear_gone">
+
+            <!--<EditText
+
+                    android:singleLine="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/input_line_height"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:hint="@string/input_card_number_hint"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:background="@drawable/textfield_normal"
+                    android:id="@+id/edtTxtCardNumber"/>-->
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/edttxt" />
+        </LinearLayout>
+
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:background="@drawable/register_button_disable"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/btn_register_text"
+                android:textSize="@dimen/text_size_18"
+                android:id="@+id/btnRegister"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/input_line_height"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:text="@string/check_agree_protocol"
+                    android:textSize="@dimen/text_size3"
+                    style="@style/green_round_checkbox"
+                    android:id="@+id/checkAgreeProtocol"
+                    android:paddingLeft="10dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/input_line_height"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/link_member_rule_text"
+                    android:textSize="@dimen/text_size3"
+                    android:textColor="@color/orange"
+                    android:id="@+id/tvMemberProtocol"/>
+
+         <!--   <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/input_line_height"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/tv_and"
+                    android:textSize="@dimen/text_size3"
+                    android:textColor="@color/orange"
+                    android:id="@+id/tvAnd"/>-->
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/input_line_height"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/link_smile_shop_protocol_text"
+                    android:textSize="@dimen/text_size3"
+                    android:textColor="@color/orange"
+                    android:id="@+id/tvStoreProtocol"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

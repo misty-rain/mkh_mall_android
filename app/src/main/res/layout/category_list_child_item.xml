@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:id="@+id/cateitemchildLayout"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/imgcatechildicon"
+            android:visibility="gone"
+            />
+        <CheckedTextView
+            android:id="@+id/txt_catetitle_child"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="湖东"
+            android:textColor="@color/main_black"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_14"/>
+
+    </LinearLayout>
+</RelativeLayout>

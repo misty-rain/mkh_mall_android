@@ -1,0 +1,297 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_background" >
+
+        <LinearLayout
+            android:id="@+id/personinfo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_background"
+            android:orientation="vertical" >
+
+          <com.fish.mkh.div.MkhTitleBar
+                android:id="@+id/personinfoactivity_actionbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+          </com.fish.mkh.div.MkhTitleBar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/personinfoctivity_name"
+                    android:textColor="@color/app_text_dark"
+                    android:textSize="16sp" />
+
+
+                <EditText
+                    android:id="@+id/pia_name_et"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_edit_pia"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_black"
+                    android:textSize="16sp" />
+
+               <!-- <TextView
+                    android:id="@+id/pia_name_et"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_edit_pia"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp" >
+                </TextView>-->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_edit"
+                    android:layout_gravity="center"
+                    android:id="@+id/edit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/personinfoctivity_phonenum"
+                    android:textColor="@color/app_text_dark"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/pia_phonenum_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_edit_pia"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/personinfoctivity_membercard"
+                    android:textColor="@color/app_text_dark"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/pia_membercard_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_edit_pia"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/personinfoctivity_solidcard"
+                    android:textColor="@color/app_text_dark"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/pia_solidcard_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_edit_pia"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/personinfoctivity_sex"
+                    android:textColor="@color/app_text_dark"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/pia_sex_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_edit_pia"
+                    android:gravity="center_vertical"
+                    android:hint="@string/personinfoctivity_sex_hint"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone"
+                    android:src="@mipmap/ico_more_n" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/personinfoctivity_birthday"
+                    android:textColor="@color/app_text_dark"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/pia_birthday_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_edit_pia"
+                    android:gravity="center_vertical"
+                    android:hint="@string/personinfoctivity_birthday_hint"
+                    android:textColor="@color/color_black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone"
+                    android:src="@mipmap/ico_more_n" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/personinfo_pwdchange"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/center_change_pwd"
+                    android:textColor="@color/app_text_dark"
+                    android:textSize="16sp" />
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ico_more_n" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/personinfo_loginout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="退出当前账号"
+                    android:textColor="@color/color_red"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+    <com.fish.mkh.div.MkhTitleBar
+        android:id="@+id/search_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_background" />
+
+   <!-- <ListView
+        android:id="@+id/search_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#c0c0c0"
+        android:dividerHeight="1px"
+        android:listSelector="@color/color_txt_grey1"
+        />-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <include
+        android:id="@+id/empty_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        layout="@layout/empty_list"
+        >
+    </include>
+        </LinearLayout>
+
+    <include
+        android:id="@+id/bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/bottom_layout"
+        >
+    </include>
+
+</LinearLayout>

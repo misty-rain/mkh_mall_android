@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_top"
+    android:paddingLeft="@dimen/padding_left"
+    android:paddingRight="@dimen/padding_right"
+    android:paddingTop="@dimen/padding_bottom" >
+
+    <LinearLayout
+        android:id="@+id/adapter_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/adapter_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_txt_black"
+            android:textSize="@dimen/text_size3" />
+
+        <TextView
+            android:id="@+id/adapter_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_txt_grey"
+            android:textSize="@dimen/text_size1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adapter_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/adapter_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/color_txt_green" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adapter_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/adapter_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/color_txt_grey"
+            android:textSize="@dimen/text_size1" />
+
+        <TextView
+            android:id="@+id/adapter_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/color_txt_red"
+            android:textSize="@dimen/text_size2" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

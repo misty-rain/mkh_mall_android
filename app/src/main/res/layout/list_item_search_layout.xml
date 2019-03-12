@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:gravity="center_vertical"
+
+    android:orientation="horizontal" >
+
+   <ImageView
+       android:layout_weight="0.5"
+       android:layout_width="0dp"
+       android:layout_marginTop="20dp"
+       android:layout_marginBottom="20dp"
+       android:layout_height="wrap_content"
+       android:id="@+id/item_image"
+       android:src="@mipmap/dedault"
+       />
+
+    <RelativeLayout
+        android:layout_weight="3"
+        android:id="@+id/rl_name2"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:orientation="horizontal"
+
+       >
+
+        <TextView
+            android:id="@+id/listitem_title"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_black"
+            android:text="雀巢咖啡"
+            android:singleLine="false"
+            />
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_name1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+
+            android:layout_toRightOf="@id/listitem_title"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="ddd"
+                android:singleLine="true"
+                android:gravity="right"
+                android:paddingRight="4dp"
+                android:textColor="@color/main_black"
+                 />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

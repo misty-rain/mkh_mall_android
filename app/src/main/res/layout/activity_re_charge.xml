@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.fish.mkh.div.MkhTitleBar
+        android:id="@+id/rechargeactivity_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <RelativeLayout
+        android:id="@+id/rechargeactivity_cost"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/rca_cost_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="11dp"
+                    android:src="@mipmap/ic_cost" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/rca_cost_img"
+                    android:text="@string/rechargeactivity_cost"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/rca_more_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/icon_down" />
+
+                <TextView
+                    android:id="@+id/rca_cost_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/rca_more_img"
+                    android:text="50元"
+                    android:textColor="@color/color_black"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rechargeactivity_costnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/cost_btn_sel"
+                android:textColor="@color/color_txt_black"
+                android:textSize="14sp"
+                android:text="@string/rechargeactivity_cost_100" />
+
+            <Button
+                android:id="@+id/btntwo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/cost_btn_sel"
+                android:textColor="@color/color_txt_black"
+                android:text="@string/rechargeactivity_cost_200"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnfive"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/cost_btn_sel"
+                android:textColor="@color/color_txt_black"
+                android:text="@string/rechargeactivity_cost_500"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/btnoneqian"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/cost_btn_sel"
+                android:textColor="@color/color_txt_black"
+                android:text="@string/rechargeactivity_cost_1000"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/rca_button5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/cost_btn_sel"
+                android:textColor="@color/color_txt_black"
+                android:text="@string/rechargeactivity_cost_custom" />
+
+            <TextView
+                android:id="@+id/di_warning"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:textColor="@color/color_txt_black"
+                android:text="提示：\n自定义金额必须为整百" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+            
+    <RelativeLayout
+        android:id="@+id/rechargeactivity_recharge"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/rca_recharge_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="11dp"
+                    android:src="@mipmap/ic_zhifubao" />
+
+                <TextView
+                    android:id="@+id/rca_recharge_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/rca_recharge_img"
+                    android:text="@string/rechargeactivity_zhifubao"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/rca_checked_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/ico_checked" />
+
+            </RelativeLayout>
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+    
+    <Button
+        android:id="@+id/rca_recharge_bt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/cost_btn_ok"
+        android:text="@string/rechargeactivity_cost_ok"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

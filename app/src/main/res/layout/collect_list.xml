@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideOverlay"
+        android:id="@+id/swipeRefreshLayout">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/collect_list"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <include
+            android:id="@+id/collect_empty_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/empty_list"
+            android:visibility="gone" >
+        </include>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_title_message">消息</string>
+    <string name="tab_title_friends">联系人</string>
+    <string name="tab_title_mine">我的</string>
+    <string name="tab_title_more">更多</string>
+</resources>

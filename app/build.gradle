@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    mavenCentral()
+}
+android {
+    compileSdkVersion 27
+    buildToolsVersion "22.0.0"
+
+    defaultConfig {
+        applicationId "com.mkh.mobilemall"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 7
+        versionName "1.0.6"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    android {
+        lintOptions {
+            abortOnError false
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.0.0'
+    compile 'com.jakewharton:butterknife:7.0.0'
+    compile 'com.android.support:recyclerview-v7:21.0.3'
+    /*compile 'cn.bingoogolapple:bga-banner:2.0.0@aar'
+                            compile 'com.facebook.fresco:fresco:0.5.2'*/
+    compile files('libs/ShareSDK-SinaWeibo-2.5.8.jar')
+    compile files('libs/mframework.jar')
+    compile files('libs/ShareSDK-Core-2.5.8.jar')
+    compile files('libs/ShareSDK-QZone-2.5.8.jar')
+    compile files('libs/ShareSDK-Wechat-2.5.8.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.5.8.jar')
+    compile files('libs/api-android-3.4.6.jar')
+    compile files('libs/baidumapapi_v3_5_0.jar')
+    compile files('libs/alipaySDK-20150610.jar')
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    compile 'com.loopj.android:android-async-http:1.4.8'
+    compile 'com.jude:rollviewpager:1.0.1'
+    compile files('libs/Bughd_android_sdk_v1.3.0.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.5.8.jar')
+    compile files('libs/TalkingDataAnalytics_V1.2.79.jar')
+    compile files('libs/api-android-3.4.9.jar')
+    /*compile files('libs/sdk-android-1.0.0.jar')*/
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/moreEvaluationLayout"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="32sp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_gravity="left|center"
+            android:src="@mipmap/com_detail_comment"/>
+
+
+        <TextView
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/title_evaluation"
+                android:textSize="@dimen/text_size4"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:id="@+id/tvItemEvaluationTitle"/>
+
+        <ImageView
+            android:id="@+id/imageView_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:src="@mipmap/ic_arrow_right"/>
+    </LinearLayout>
+    <View style="@style/cut_line_vertical_for_index"/>
+    <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:divider="@color/light_gray"
+            android:dividerHeight="1px"
+            android:id="@+id/evaluationList"/>
+
+</LinearLayout>

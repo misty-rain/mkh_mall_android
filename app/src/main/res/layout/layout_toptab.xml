@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:baselineAligned="false"
+    android:gravity="center_vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_tab1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_tab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/myorder_tab1"
+            android:textColor="@color/color_txt_black"
+            android:textSize="@dimen/text_size2" />
+
+        <View
+            android:id="@+id/v_tab1"
+            android:layout_width="50dp"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/color_tab_orange"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_tab2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_tab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/myorder_tab2"
+            android:textColor="@color/color_txt_black"
+            android:textSize="@dimen/text_size2" />
+
+        <View
+            android:id="@+id/v_tab2"
+            android:layout_width="50dp"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/color_tab_orange"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_tab3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_tab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/myorder_tab4"
+            android:textColor="@color/color_txt_black"
+            android:textSize="@dimen/text_size2" />
+
+        <View
+            android:id="@+id/v_tab3"
+            android:layout_width="50dp"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/color_tab_orange"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_tab5"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_tab5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/myorder_tab5"
+            android:textColor="@color/color_txt_black"
+            android:textSize="@dimen/text_size2" />
+
+        <View
+            android:id="@+id/v_tab5"
+            android:layout_width="50dp"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/color_tab_orange"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ll_tab6"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_tab6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="已取消"
+            android:textColor="@color/color_txt_black"
+            android:textSize="@dimen/text_size2" />
+
+        <View
+            android:id="@+id/v_tab6"
+            android:layout_width="50dp"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/color_tab_orange"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

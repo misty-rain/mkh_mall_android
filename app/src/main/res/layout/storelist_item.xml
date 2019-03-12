@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:id="@+id/storeListView_item_textView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_black"
+            android:textSize="@dimen/text_size_15"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="60.0dip"
+            android:paddingTop="8.0dip"
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:src="@mipmap/ic_arrow_right"
+            android:id="@+id/imageView5"
+
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+
+</LinearLayout>

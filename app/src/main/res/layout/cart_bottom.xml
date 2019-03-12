@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="fill_parent"
+              android:background="#DDDDDD"
+              android:orientation="vertical">
+    <com.mkh.mobilemall.ui.widget.swipemenulistview.SwipeMenuListView
+        android:id="@+id/listordercar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@mipmap/cutline_divider"
+        android:dividerHeight="5px"
+        />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+<!--            <include layout="@layout/distribution_tips_layout"/>-->
+
+            <LinearLayout
+                android:id="@+id/llyreiceveaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="5dp"
+
+                android:background="@mipmap/feedback_editlayout_bg">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/cart_bottom_receiveaddress"
+                    android:textColor="@color/main_black"
+                    android:textSize="15sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txtreice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="江苏省苏州"
+                    android:textColor="@color/main_black"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_arrow_right"/>
+            </LinearLayout>
+
+            <View style="@style/cut_line_vertical_for_index"/>
+
+            <LinearLayout
+                android:id="@+id/llydistrdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:background="@mipmap/feedback_editlayout_bg">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/cart_bottom_distribution_date"
+                    android:textColor="@color/main_black"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/txtdistridate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="2015-07-02"
+                    android:textColor="@color/main_black"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_arrow_right"/>
+            </LinearLayout>
+
+            <View style="@style/cut_line_vertical_for_index"/>
+
+            <LinearLayout
+                android:id="@+id/llydistype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@mipmap/feedback_editlayout_bg">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/cart_bottom_dstribution_type"
+                    android:textColor="@color/main_black"
+                    android:textSize="15sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txtdistritype"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="快递"
+                    android:textColor="@color/main_black"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_arrow_right"/>
+            </LinearLayout>
+
+            <View style="@style/cut_line_vertical_for_index"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/feedback_editlayout_bg">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/cart_bottom_pay_type"
+                    android:textColor="@color/main_black"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/txtpaytype"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="微笑卡"
+                    android:textColor="@color/main_black"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/img_wipeamount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_arrow_right"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <View style="@style/cut_line_vertical_for_index"/>
+
+            <LinearLayout
+                android:id="@+id/llypreferentialticket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@mipmap/feedback_editlayout_bg">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/cart_bottom_preferential_ticket"
+                    android:textColor="@color/main_black"
+                    android:textSize="15sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txtpreferential_ticket"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="可使用"
+                    android:textColor="@color/main_black"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_arrow_right"/>
+            </LinearLayout>
+
+            <View style="@style/cut_line_vertical_for_index"/>
+
+            <LinearLayout
+                android:id="@+id/llyscore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@mipmap/feedback_editlayout_bg">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/cart_bottom_preferential_ticket"
+                    android:textColor="@color/main_black"
+                    android:textSize="15sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txt_score_balance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="使用积分"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_arrow_right"/>
+            </LinearLayout>
+
+            <View style="@style/cut_line_vertical_for_index"/>
+
+            <LinearLayout
+                android:id="@+id/llyorderremark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/feedback_editlayout_bg">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/cart_bottom_order_remark"
+                    android:textColor="@color/main_black"
+                    android:textColorHint="@color/main_black"
+                    android:textSize="15sp">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llyprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:background="@mipmap/feedback_editlayout_bg">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:id="@+id/txtprice"
+                    android:text="合计:78.00"
+                    android:textColor="@color/main_black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:id="@+id/txtdiscount"
+                    android:text="折扣:0.00"
+                    android:textColor="@color/main_black"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

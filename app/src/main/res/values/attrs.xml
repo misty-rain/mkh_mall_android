@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="refresh" format="reference" />
+
+    <declare-styleable name="PullScrollView">
+        <attr name="header" format="reference" />
+        <attr name="headerHeight" format="dimension" />
+        <attr name="headerVisibleHeight" format="dimension" />
+    </declare-styleable>
+
+    <attr name="listview_item_background_selector" format="reference" />
+    <attr name="listview_item_refresh_animation" format="reference" />
+    <attr name="link_color" format="reference" />
+    <attr name="line_drawable" format="reference" />
+    <attr name="listview_checked_color" format="reference" />
+    <attr name="listview_pic_bg_border" format="reference" />
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="HomeButton">
+        <attr name="backcolor" format="integer" />
+        <attr name="textSize" format="dimension" />
+        <attr name="big" format="boolean" />
+        <attr name="home" format="integer" />
+        <attr name="text" format="string" />
+    </declare-styleable>
+
+    <attr name="floatingActionButtonStyle" format="reference" />
+     <attr name="icActionEdit" format="reference"/>
+    <!-- progress bar number -->
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress" format="integer"/>
+        <attr name="max" format="integer"/>
+
+        <attr name="progress_unreached_color" format="color"/>
+        <attr name="progress_reached_color" format="color"/>
+
+        <attr name="progress_reached_bar_height" format="dimension"/>
+        <attr name="progress_unreached_bar_height" format="dimension"/>
+
+        <attr name="progress_text_size" format="dimension"/>
+        <attr name="progress_text_color" format="color"/>
+
+        <attr name="progress_text_offset" format="dimension"/>
+
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ToggleButton">
+        <attr name="borderWidth" format="dimension">
+        </attr>
+        <attr name="offBorderColor" format="reference|color">
+        </attr>
+        <attr name="offColor" format="reference|color">
+        </attr>
+        <attr name="onColor" format="reference|color">
+        </attr>
+        <attr name="spotColor" format="reference|color">
+        </attr>
+        <attr name="animate" format="reference|boolean">
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="BaseTheme">
+        <attr name="actionBarIconColor" format="color" />
+        <attr name="actionBarInsetStart" format="dimension" />
+        <attr name="spinnerBarInsetStart" format="dimension" />
+        <attr name="popupItemBackground" format="reference" />
+        <attr name="photoItemForeground" format="reference" />
+        <attr name="photoItemForegroundBorderless" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="BGABanner">
+        <!-- 指示点容器背景 -->
+        <attr name="banner_pointContainerBackground" format="reference|color" />
+        <!-- 指示点选中时的背景 -->
+        <attr name="banner_pointFocusedImg" format="reference" />
+        <!-- 指示点未选中时的背景 -->
+        <attr name="banner_pointUnfocusedImg" format="reference" />
+        <!-- 指示点容器左右内间距 -->
+        <attr name="banner_pointContainerLeftRightPadding" format="dimension" />
+        <!-- 指示点上下外间距 -->
+        <attr name="banner_pointTopBottomMargin" format="dimension" />
+        <!-- 指示点左右外间距 -->
+        <attr name="banner_pointLeftRightMargin" format="dimension" />
+        <!-- 指示点的位置 -->
+        <attr name="banner_pointGravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_horizontal" value="0x01" />
+        </attr>
+        <!-- 是否开启自动轮播 -->
+        <attr name="banner_pointAutoPlayAble" format="boolean" />
+        <!-- 自动轮播的时间间隔 -->
+        <attr name="banner_pointAutoPlayInterval" format="integer" />
+        <!-- 页码切换过程的时间长度 -->
+        <attr name="banner_pageChangeDuration" format="integer" />
+        <!-- 页面切换的动画效果 -->
+        <attr name="banner_transitionEffect" format="enum">
+            <enum name="defaultEffect" value="0" />
+            <enum name="alpha" value="1" />
+            <enum name="rotate" value="2" />
+            <enum name="cube" value="3" />
+            <enum name="flip" value="4" />
+            <enum name="accordion" value="5" />
+            <enum name="zoomFade" value="6" />
+            <enum name="fade" value="7" />
+            <enum name="zoomCenter" value="8" />
+            <enum name="zoomStack" value="9" />
+            <enum name="stack" value="10" />
+            <enum name="depth" value="11" />
+            <enum name="zoom" value="12" />
+        </attr>
+        <!-- 提示文案的文字颜色 -->
+        <attr name="banner_tipTextColor" format="reference|color" />
+        <!-- 提示文案的文字大小 -->
+        <attr name="banner_tipTextSize" format="dimension" />
+    </declare-styleable>
+
+</resources>

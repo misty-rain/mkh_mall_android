@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:background="@color/category_list_background_color">
+
+
+
+    <ImageView
+        android:id="@+id/imggoweidian"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/space_8"
+        android:paddingRight="@dimen/space_8"
+        android:contentDescription="@null"
+        android:background="@null"
+        android:src="@mipmap/v_logo" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@color/white40" />
+
+
+    <!--<EditText
+        android:id="@+id/edtsearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_weight="6"
+        android:background="@drawable/edit_input_bg"
+        android:drawableLeft="@mipmap/globle_search_icon"
+        android:drawablePadding="8dip"
+        android:hint="@string/main_title_bar_input_searchkey_hint"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:textColor="@color/main_black"
+        android:textColorHint="@color/main_black"
+        />-->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_margin="5dip"
+        android:layout_weight="5"
+        android:background="@drawable/actionbar_btnback_selector"
+        android:id="@+id/img_search"
+        android:src="@mipmap/index_seach_icon"
+        />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+
+        android:src="@mipmap/icon_location"/>
+
+    <Button
+        android:id="@+id/btn_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/btn_bg_transparent_selector"
+        android:contentDescription="@null"
+        android:textColor="@color/main_black"
+        android:text="上海"
+        />
+
+    <View
+        android:layout_width="2px"
+        android:layout_height="25dp"
+        android:layout_margin="8dp"
+
+        android:background="@color/text_light" />
+
+    <ImageButton
+        android:id="@+id/btnUser"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/space_6"
+        android:layout_weight="1"
+
+        android:contentDescription="@null"
+        android:background="@drawable/btn_bg_transparent_selector"
+        android:src="@mipmap/icon_user" />
+
+</LinearLayout>

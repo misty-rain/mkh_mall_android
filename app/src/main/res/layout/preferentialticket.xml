@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/base_toolbar" />
+    <View
+        style="@style/cut_line_vertical_for_index"
+        />
+
+
+    <ListView
+        android:id="@+id/ticketlist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:divider="@color/transparent"
+        android:dividerHeight="10dp"
+         >
+    </ListView>
+
+    <include
+        android:id="@+id/empty_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/empty_list"
+        android:visibility="gone" >
+    </include>
+
+</LinearLayout>

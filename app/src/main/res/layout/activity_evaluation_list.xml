@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:id="@+id/evaluation_list"
+                tools:context="com.mkh.mobilemall.ui.activity.commodity.EvaluationListActivity">
+
+    <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/base_toolbar"/>
+    <View
+            style="@style/cut_line_vertical_for_index"/>
+
+
+    <LinearLayout
+            android:layout_marginTop="50sp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/evaluationListLayout">
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:divider="@color/light_gray"
+                android:dividerHeight="2px"
+                android:id="@+id/evaluationList"/>
+            </LinearLayout>
+
+    <include
+        android:id="@+id/empty_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/empty_list"
+        android:visibility="gone" >
+    </include>
+
+</RelativeLayout>

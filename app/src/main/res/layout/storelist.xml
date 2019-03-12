@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.fish.mkh.div.MkhTitleBar
+        android:id="@+id/shop_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View style="@style/cut_line_vertical_for_index" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/llnet">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/net"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/out_time"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_size3"/>
+            <Button
+                android:id="@+id/reload"
+                android:layout_width="86dp"
+                android:layout_height="30dp"
+                android:text="@string/reload"
+                android:gravity="center"
+                android:textColor="@color/main_black"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textSize="@dimen/text_size2"
+                android:background="@drawable/reload"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/storeListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:divider="@color/transparent"
+        android:dividerHeight="10dp"
+        />
+
+    <include
+        android:id="@+id/empty_list"
+        layout="@layout/empty_list_for_store"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"></include>
+</LinearLayout>

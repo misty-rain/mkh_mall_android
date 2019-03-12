@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/abc_dialog_material_background_light"
+    >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+   >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/txtorderno"
+            android:background="@null"
+            android:gravity="center"
+            android:text="订单号：123456"
+            android:textColor="@color/main_black"
+            android:textSize="15sp">
+        </TextView>
+    </LinearLayout>
+
+    <View style="@style/cut_line_vertical_for_index"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/txtamount"
+            android:background="@null"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:text="78.00"
+            android:textColor="@color/main_black"
+            android:textSize="15sp">
+        </TextView>
+    </LinearLayout>
+
+    <View style="@style/cut_line_vertical_for_index"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:id="@+id/txtpaytype"
+            android:background="@null"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:text="微笑卡付款"
+            android:textColor="@color/main_black"
+            android:textSize="15sp">
+        </TextView>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:id="@+id/txtbalance"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="余额：5000"
+            android:textColor="@color/main_gray"
+            android:textSize="15sp">
+        </TextView>
+
+
+
+        <Button
+            android:id="@+id/btnRecharge"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:textColor="@color/confirm"
+            android:text="@string/pay_recharge"
+            />
+    </LinearLayout>
+
+   <!-- <View style="@style/cut_line_vertical_for_index"/>-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <EditText
+            android:id="@+id/edtpaycode"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/textfield_normal"
+            android:gravity="center_vertical"
+            android:hint="@string/input_pay_code"
+            android:textColor="@color/main_black"
+            android:textColorHint="@color/main_gray"
+            android:textSize="15sp">
+        </EditText>
+
+
+        <Button
+            android:id="@+id/btngetpaycode"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:textColor="@color/main_black"
+            android:background="@drawable/btn_bg_for_grey_selector"
+            android:text="@string/get_pay_code"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+
+        >
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@color/main_black"
+            android:id="@+id/btncancle"
+            android:background="@drawable/btn_bg_for_grey_selector"
+            android:focusable="true"
+            android:text="@string/button_submit_calcle"
+            />
+
+
+        <Button
+            android:id="@+id/btnpayment"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/pay"
+            android:focusable="true"
+            android:textSize="@dimen/text_size_18"
+            android:background="@drawable/btn_bg_for_red_selector"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

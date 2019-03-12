@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:toggle="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical" >
+
+    <!--<include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/cart_tool_bar" />
+    <View
+        style="@style/cut_line_vertical_for_index"
+        />-->
+    <com.fish.mkh.div.MkhTitleBar
+        android:id="@+id/cart_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--<include
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/titleline"
+        >
+    </include>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_background" />
+    <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cartList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:dividerHeight="4px"
+        android:layout_weight="1"/>
+
+
+    <include
+        android:id="@+id/cart_bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/cart_bottom_bar"
+        >
+    </include>
+
+
+    <include
+        android:id="@+id/empty_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/empty_list_for_carlist"
+        android:visibility="gone" >
+    </include>
+
+
+</LinearLayout>

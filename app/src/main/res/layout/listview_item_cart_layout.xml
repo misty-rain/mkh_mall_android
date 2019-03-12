@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    swipe:leftEdgeSwipeOffset="0dp"
+    android:background="@mipmap/exit_bg_2"
+    swipe:rightEdgeSwipeOffset="0dp">
+
+    <LinearLayout
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:gravity="center"
+        android:tag="Bottom3"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/trash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        >
+    <RelativeLayout
+        android:id="@+id/rl_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+         android:layout_marginTop="20dp"
+        android:gravity="left|center_vertical" >
+
+        <ImageView
+            android:id="@+id/listitem_Thumbnails"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/app_name"
+            android:gravity="left|center_vertical"
+            android:src="@mipmap/icon_commodity_default_1" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            >
+            <TextView
+                android:id="@+id/listitem_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_18"
+                android:textColor="@color/main_black"
+                android:text="雀巢咖啡"
+                android:gravity="left"
+                android:paddingBottom="8dp"
+                android:singleLine="true"
+                android:paddingRight="5dp"
+                android:ellipsize="end"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:onClick="removeItemCilck"
+                android:visibility="gone"
+                android:src="@mipmap/icon_clear"
+                android:id="@+id/imgremove"
+                android:layout_alignLeft="@id/listitem_title"
+
+                />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+
+            >
+            <TextView
+                android:id="@+id/listitem_unitprice"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_18"
+                android:textColor="@color/red"
+                android:text="1000"
+                android:layout_marginTop="10dp"
+                android:gravity="bottom"
+
+                />
+            <TextView
+                android:id="@+id/listitem_count_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_18"
+                android:textColor="@color/main_black"
+                android:text="(....)"
+                android:visibility="gone"
+                android:gravity="left|center_vertical"/>
+            <com.mkh.mobilemall.ui.widget.AddAndSubView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/aasComEdite"
+
+                >
+
+            </com.mkh.mobilemall.ui.widget.AddAndSubView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</com.daimajia.swipe.SwipeLayout>

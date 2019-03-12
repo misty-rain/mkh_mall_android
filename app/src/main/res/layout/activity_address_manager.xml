@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical" >
+
+    <com.fish.mkh.div.MkhTitleBar
+        android:id="@+id/title_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp" >
+
+        <com.fish.mkh.div.swipemenu.SwipeMenuListView
+            android:id="@+id/lv_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="#EEEEEE"
+            android:dividerHeight="1dp"
+            android:clickable="true"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:id="@+id/rl_error_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="5dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_err_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:text="@string/myorder_no_data"
+                android:textColor="@color/color_txt_grey"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical" >
+
+    <com.fish.mkh.div.MkhTitleBar
+        android:id="@+id/title_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+       <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_background" />
+
+    <com.fish.mkh.div.TopTablet
+        android:id="@+id/top_table"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+        <!-- <ListView
+            android:id="@+id/lv_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="#EEEEEE"
+            android:dividerHeight="15dp"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+        </ListView> -->
+             <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/white"
+                 android:layout_marginTop="10dp"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.fish.mkh.div.MkhTitleBar
+        android:id="@+id/location_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        style="@style/cut_line_vertical_for_index"
+        />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapView"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.baidu.mapapi.map.MapView>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lv_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <com.fish.mkh.div.MkhTitleBar
+        android:id="@+id/title_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_background" />
+
+    <ListView
+        android:id="@+id/goods_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/color_background"
+        android:dividerHeight="1dp"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+    </ListView>
+
+<!--     <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/color_background" /> -->
+
+    <EditText
+        android:id="@+id/et_comment"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/color_txt_grey"
+        android:textColorHint="@color/main_black"
+        android:background="#F9F9F9"
+        android:gravity="top"
+        android:textSize="@dimen/text_size4"
+        android:hint="写点什么吧，您的意见对其他购买者帮助很大哦 ~" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_order_orange"
+        android:text="发表评价" />
+
+</LinearLayout>

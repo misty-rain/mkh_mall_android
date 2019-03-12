@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingTop="@dimen/space_25"
+              android:background="@drawable/abc_dialog_material_background_light">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_18"
+        android:textColor="@color/black"
+        android:id="@+id/dialog_title"
+        android:gravity="center"
+
+        android:text="@string/title_remind"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/space_20"
+        android:background="@color/grey" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_40"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_18"
+            android:gravity="center"
+            android:textColor="@color/app_blue"
+            android:text="@string/button_submit_calcle"
+            android:id="@+id/custom_cancel"
+            android:focusable="true"
+            android:background="@drawable/dialog_cs_selector"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+
+            android:background="@color/grey" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_18"
+            android:gravity="center"
+            android:textColor="@color/app_blue"
+            android:text="@string/button_submit_entry"
+            android:id="@+id/custom_confrim"
+            android:focusable="true"
+            android:background="@drawable/dialog_cs_selector"/>
+    </LinearLayout>
+
+</LinearLayout>

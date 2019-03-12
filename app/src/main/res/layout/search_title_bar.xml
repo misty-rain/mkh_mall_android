@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_titlebar_root"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="48dp" >
+
+    <LinearLayout
+        android:id="@+id/ll_fctitlebar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/common_grey_sel"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="3dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:src="@mipmap/ico_backarrow" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_8"
+        android:layout_marginRight="@dimen/space_8"
+        android:layout_weight="1"
+        android:textCursorDrawable="@null"
+        android:hint="@string/pleaseinputsearch"
+        android:background="@drawable/searchbar_bg"
+
+        android:minHeight="35dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/main_black"
+        android:textSize="@dimen/text_size_16" />
+<!--    <ImageButton
+        android:id="@+id/ib_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:paddingLeft="@dimen/space_8"
+        android:visibility="gone"
+        android:paddingRight="@dimen/space_8"
+        android:src="@drawable/ic_prompt_dismiss" />-->
+
+
+
+</RelativeLayout>

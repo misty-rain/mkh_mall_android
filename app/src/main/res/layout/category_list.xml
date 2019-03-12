@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+        <!--  <include
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              layout="@layout/title_bar_search" >
+          </include>-->
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <ListView
+                android:id="@+id/catergory_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/category_tabs_ly"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />
+
+            <ImageView
+                android:id="@+id/cate_indicator_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dip"
+                android:src="@mipmap/category_tab_select_indicator" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.0"
+            android:orientation="vertical" >
+
+            <!--  <ImageButton
+                 android:id="@+id/image_btn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:background="@drawable/image_layout_shape"
+                 android:gravity="center"
+                 android:padding="20dip"
+                 android:src="@drawable/ic_launcher" />-->
+
+            <include
+                android:id="@+id/seconde_listview"
+                layout="@layout/category_child" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/anim_fragment_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </FrameLayout>
+
+
+</RelativeLayout>

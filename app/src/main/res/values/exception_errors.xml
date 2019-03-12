@@ -1,0 +1,20 @@
+<resources>
+
+    <string-array name="error_map">
+        <item>21315-Token</item>
+    </string-array>
+
+
+
+    <string name="network_not_connected">网络连接失败,请检查网络设置</string>
+    <string name="xml_parser_failed">數據解析異常</string>
+    <string name="io_exception_error">文件流異常</string>
+    <string name="http_status_code_error">網路異常，錯誤碼：%d</string>
+    <string name="http_exception_error">網路異常,請求超時</string>
+    <string name="socket_exception_error">網路異常，讀取數據超時</string>
+    <string name="app_run_code_error">應用程序運行時異常</string>
+    <string name="app_menu_surelogout">確定退出程式嗎？</string>
+    <string name="timeout_try_again">網路連接超時,請重試</string>
+    <string name="timeout">網路連接超時</string>
+
+</resources>

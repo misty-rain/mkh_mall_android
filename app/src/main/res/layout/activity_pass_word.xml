@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.fish.mkh.div.MkhTitleBar
+        android:id="@+id/passwordactivity_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <EditText
+        android:id="@+id/passwordactivity_password_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/common_edit_sel"
+        android:ems="10"
+        android:hint="@string/passwordactivity_hint_password"
+        android:textColorHint="@color/color_txt_grey"
+        android:textColor="@color/main_black"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/passwordactivity_newpassword_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/main_black"
+        android:background="@drawable/common_edit_sel"
+        android:ems="10"
+        android:hint="@string/passwordactivity_hint_newpassword"
+        android:textColorHint="@color/color_txt_grey"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp" />
+
+    <EditText
+        android:id="@+id/passwordactivity_confirmpassword_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/common_edit_sel"
+        android:textColor="@color/main_black"
+        android:ems="10"
+        android:hint="@string/passwordactivity_hint_confirmpassword"
+        android:textColorHint="@color/color_txt_grey"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp" />
+
+    <Button
+        android:id="@+id/passwordactivity_ok_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/password_btn_ok"
+        android:text="@string/passwordactivity_ok"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size5" />
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/main_title_bar" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1" >
+
+            <ListView
+                android:id="@+id/base_node_listview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/category_list_background_color"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:listSelector="@color/tree_list_selector"
+                android:scrollbars="none" />
+
+            <View
+                android:id="@+id/tree_cutline"
+                android:layout_below="@+id/base_node_listview"
+                style="@style/cut_line_vertical_for_index" />
+            <!-- <ListView
+                android:id="@+id/catergory_listview"
+                android:layout_below="@+id/tree_cutline"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/category_tabs_ly"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:listSelector="@color/tree_list_selector"
+                android:scrollbars="none" />-->
+            <ExpandableListView
+                android:id="@+id/catergory_listview"
+                android:layout_below="@+id/tree_cutline"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/category_list_background_color"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:listSelector="@color/tree_list_selector"
+                android:scrollbars="none">
+
+            </ExpandableListView>
+
+          <!--  <ImageView
+           android:background="@drawable/category_tabs_ly"
+                android:id="@+id/cate_indicator_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dip"
+                android:src="@mipmap/category_tab_select_indicator" />-->
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.2"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_black"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_16"
+                android:layout_marginTop="6dp"
+                android:id="@+id/txtstoreName"
+                android:layout_marginBottom="6dp"
+                android:text="紫桂花园社区店"/>
+            <View
+                style="@style/cut_line_vertical_for_index"
+                />
+
+
+            <include
+                android:id="@+id/layout_commodityorCollect"
+                layout="@layout/commodity_list"
+                android:visibility="gone"/>
+
+            <include
+                android:id="@+id/layout_activities"
+                layout="@layout/activity" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/anim_fragment_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </FrameLayout>
+
+</LinearLayout>
+    <include
+        android:id="@+id/bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/bottom_layout"
+        >
+    </include>
+</LinearLayout>

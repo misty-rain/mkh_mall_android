@@ -1,0 +1,116 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.fish.mkh.div.MkhTitleBar
+        android:id="@+id/ticketactivity_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_left"
+            android:layout_marginRight="@dimen/padding_right"
+            android:layout_marginTop="@dimen/padding_top"
+            android:background="@color/white" >
+
+            <Button
+                android:id="@+id/tta_bt1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/ticket_btn"
+                android:gravity="center"
+                android:text="可使用"
+                android:textColor="@color/color_txt_black"
+                android:textSize="@dimen/text_size4" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/padding_bottom"
+                android:layout_marginTop="@dimen/padding_top"
+                android:background="@color/color_background" />
+
+            <Button
+                android:id="@+id/tta_bt2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/ticket_btn"
+                android:gravity="center"
+                android:text="已失效"
+                android:textColor="@color/color_txt_black"
+                android:textSize="@dimen/text_size4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp" >
+            
+            <View
+                android:id="@+id/tta_bt1_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:background="@color/color_button_orange" />
+
+          <View
+              android:id="@+id/tta_bt2_bottom"
+              android:layout_width="match_parent"
+              android:layout_height="5dp"
+              android:layout_marginLeft="50dp"
+              android:layout_marginRight="60dp"
+              android:layout_weight="1"
+              android:background="@color/color_button_orange"
+              android:visibility="invisible" />
+
+        </LinearLayout>
+
+         
+    </LinearLayout>
+
+ 	<View
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="1dp"
+ 	    android:layout_marginLeft="@dimen/padding_left"
+ 	    android:layout_marginRight="@dimen/padding_right"
+ 	    android:background="@color/color_background" />
+
+ 	<!-- 
+    <ListView
+        android:id="@+id/ticketactivity_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@color/white"
+        android:divider="@color/transparent"
+        android:dividerHeight="10dp"
+        android:paddingTop="10dp" >
+    </ListView>
+    -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

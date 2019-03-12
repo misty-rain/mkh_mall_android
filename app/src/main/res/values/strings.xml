@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">明康汇</string>
+    <string name="button_submit_entry">确认</string>
+    <string name="button_submit_calcle">取消</string>
+
+
+
+    <string name="company">上海明康汇 </string>
+    <string name="copyright">Copyright(©) 2014–2015</string>
+    <string name="app_version">当前版本:</string>
+    <string name="loading">载入中……</string>
+    <string name="commiting">提交中……</string>
+    <string name="logining">登陆中……</string>
+    <string name="action_settings">设置</string>
+    <string name="title_activity_login">登录</string>
+
+<!-- 主页 标题栏 -->
+    <string name="main_title_bar_input_searchkey_hint">请输入商品名称</string>
+    <string name="main_settlement">立即结算</string>
+    <string name="main_pay">支付</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btn_login_text">登录</string>
+    <string name="link_forget_text">忘记密码?</string>
+    <string name="title_activity_forget_password">找回密码</string>
+    <string name="btn_forget_text">找回</string>
+    <string name="input_phone_hint">手机号</string>
+    <string name="login_username_alert">请输入用户名</string>
+    <string name="login_password_alert">请输入密码</string>
+    <string name="btn_send_text">获取验证码</string>
+    <string name="input_code_hint">请输入验证码</string>
+    <string name="title_activity_reset">重置密码</string>
+    <string name="btn_reset_txt">重置密码</string>
+    <string name="input_new_pwd_hint">设置密码</string>
+    <string name="input_confirm_pwd_hint">确认密码</string>
+    <string name="tip_password_not_equals">密码不一致</string>
+    <string name="title_activity_register">注册</string>
+    <string name="btn_register_text">确定提交</string>
+    <string name="input_card_number_hint">实体卡号</string>
+    <string name="check_bind_card"> 我要绑定实体卡</string>
+    <string name="link_register_text">快速注册</string>
+    <string name="error_empty_card_number">请输入实体卡号</string>
+    <string name="error_empty_phone">请填写手机号码</string>
+    <string name="error_empty_code">请输入验证码</string>
+    <string name="error_empty_password">请输入密码</string>
+    <string name="error_weak_password">新密码强度太低</string>
+    <string name="error_network_timeout">连接超时,请检查您的网络连接</string>
+    <string name="link_member_rule_text"> 微笑店会员章程和</string>
+    <string name="link_smile_shop_protocol_text">微笑店协议</string>
+    <string name="wran_no_product_settlement">当前购物车没有商品</string>
+
+    <string name="distribution_tips_title">限时配送</string>
+
+    <string name="btn_back"> &lt;</string>
+    <string name="tip_login_tip">温馨提示：如果您还不是会员，您可以通过点击”快速注册”获取动态验证码，一步完成微笑店会员注册</string>
+    <string name="title_activity_commodity_view">商品详情</string>
+    <string name="cart_bottom_distribution_date">配送时间</string>
+    <string name="cart_bottom_dstribution_type">配送方式</string>
+    <string name="cart_bottom_pay_type">支付方式</string>
+    <string name="cart_bottom_preferential_ticket">优惠券</string>
+    <string name="cart_bottom_order_remark">若您对订单有特殊要求，请在此备注</string>
+    <string name="cart_bottom_receiveaddress">收货地址</string>
+    <string name="distribution_tips_description">商品仅限每周一/二/三/四/五/六/日配送</string>
+    <string name="goods_count">数量:</string>
+
+
+    <string name="title_purchase_quantity">购买数量</string>
+    <string name="title_item_desc">商品描述</string>
+    <string name="text_empty">111</string>
+    <string name="title_edible_method">食用方法</string>
+    <string name="title_evaluation">评论(0)</string>
+    <string name="title_recommend">猜你喜欢</string>
+    <string name="pay_recharge">充值</string>
+    <string name="get_pay_code">获取支付码</string>
+    <string name="input_pay_code">请输入支付码</string>
+    <string name="pay">付款</string>
+    <string name="title_activity_evaluation_list">评价列表</string>
+    <string name="check_agree_protocol">同意</string>
+    <string name="tv_and">和</string>
+
+    <!-- 会员中心页面 -->
+    <string name="center_member_no_name">会 员 号：</string>
+    <string name="center_smile_no_name">微笑卡号：</string>
+    <string name="center_score">积分</string>
+    <string name="center_remainder">余额</string>
+    <string name="center_ticket">抵用券</string>
+    <string name="center_mark_money">¥</string>
+    <string name="center_all_order">全部订单</string>
+    <string name="center_manager_address">地址管理</string>
+    <string name="center_person_meterial">个人资料</string>
+    <string name="center_change_pwd">密码修改</string>
+    <string name="center_custom_phone">客服电话</string>
+    <string name="center_sub_all_order">查看全部已购商品</string>
+    <string name="center_title">我的微笑店</string>
+    <string name="center_cancel_bind">注销</string>
+
+    <!-- 修改密码界面 -->
+    <string name="title_activity_pass_word">修改密码</string>
+    <string name="passwordactivity_hint_password">请输您的密码</string>
+    <string name="passwordactivity_hint_newpassword">请输入您的新密码</string>
+    <string name="passwordactivity_hint_confirmpassword">确认新密码</string>
+    <string name="passwordactivity_ok">完成</string>
+    <string name="passwordactivity_toast_noinput">密码不能为空</string>
+    <string name="passwordactivity_toast_inconform">两次密码输入不一致</string>
+
+    <!-- 积分界面 -->
+    <string name="title_activity_score">查看积分</string>
+
+    <!-- 微笑卡信息 -->
+    <string name="title_activity_cardinfo">消费记录</string>
+    <string name="cardinfoactivity_recharge">立即充值</string>
+
+    <!-- 充值界面 -->
+    <string name="title_activity_re_charge">微笑卡充值</string>
+    <string name="rechargeactivity_cost">充值金额</string>
+    <string name="rechargeactivity_zhifubao">支付宝</string>
+    <string name="rechargeactivity_cost_100">100元</string>
+    <string name="rechargeactivity_cost_200">200元</string>
+    <string name="rechargeactivity_cost_500">500元</string>
+    <string name="rechargeactivity_cost_1000">1000元</string>
+    <string name="rechargeactivity_cost_custom">自定义</string>
+    <string name="rechargeactivity_cost_ok">立刻充值</string>
+
+    <!-- 抵用券界面 -->
+    <string name="title_activity_ticket">查看抵用券</string>
+
+    <!-- 我的订单页面 -->
+    <string name="myorder_tab1">全部</string>
+    <string name="myorder_tab2">待付款</string>
+    <string name="myorder_tab3">待发货</string>
+    <string name="myorder_tab4">配送中</string>
+    <string name="myorder_tab5">商品评论</string>
+    <string name="myorder_no_data">没有信息！</string>
+    <string name="myorder_cancel">取消订单</string>
+    <string name="myorder_submit">付款</string>
+    <string name="myorder_orderNo">订单编号：</string>
+    <string name="myorder_orderTime">下单时间：</string>
+    <string name="myorder_orderType">支付方式：</string>
+    <string name="myorder_dispatchType">配送方式：</string>
+    <string name="myorder_title">我的订单</string>
+    <string name="myorder_mywallet">我的钱包</string>
+    <string name="myorder_myCollect">我的收藏</string>
+    <string name="myorder_phone">客服电话：021-32586280</string>
+
+    <!-- 地址管理界面 -->
+    <string name="addressMgr_title">收货地址</string>
+    <string name="addressMgr_add_new">添加新地址</string>
+    <string name="addressEdit_title_new">新建收货地址</string>
+    <string name="addressEdit_title_update">修改地址</string>
+
+
+    <!-- 支付方式选择页面 -->
+    <string name="title_activity_pay_list">支付方式选择</string>
+
+    <!-- 个人信息 -->
+    <string name="title_activity_person_info">个人信息</string>
+    <string name="personinfoctivity_name">姓名</string>
+    <string name="personinfoctivity_phonenum">绑定手机</string>
+    <string name="personinfoctivity_membercard">会员号</string>
+    <string name="personinfoctivity_solidcard">实体卡号</string>
+
+    <string name="personinfoctivity_sex">性别</string>
+    <string name="personinfoctivity_birthday">生日</string>
+    <string name="personinfoctivity_name_hint">请输入姓名</string>
+    <string name="personinfoctivity_sex_hint">请选择性别</string>
+    <string name="personinfoctivity_birthday_hint">请选择生日</string>
+    <string name="personinfoctivity_save">保存</string>
+
+    <!-- 订单详情 -->
+    <string name="orderDetail_cost">订单金额(含运费)：</string>
+    <string name="orderDetail_cost_y">运费：</string>
+    <string name="orderDetail_cost_s">实付：</string>
+    <string name="orderDetail_phone">收货人：</string>
+    <string name="order_add_reiceveaddress">新增收货地址</string>
+    <string name="distribution_delivery">送货上门</string>
+    <string name="distribution_pickup">自取</string>
+    <string name="orderDetail_address">收货地址</string>
+    <string name="title_activity_member_protocol">微笑店会员章程</string>
+    <string name="title_activity_store_protocol">微笑店协议</string>
+    <string name="title_activity_message_center">消息中心</string>
+    <string name="cart_use_ticket">可使用</string>
+    <string name="cart_no_ticket">暂无优惠券</string>
+
+
+    <!--分享-->
+    <string name="more">更多</string>
+    <string name="sm_item_demo">接口</string>
+    <string name="sm_item_auth">授权</string>
+    <string name="sm_item_wechat">微信</string>
+    <string name="sm_item_yixin">易信</string>
+    <string name="sm_item_customer">自定义接口</string>
+    <string name="sm_item_custom_fields">自定义分享内容</string>
+    <string name="sm_item_fl_weibo">关注新浪微博</string>
+    <string name="sm_item_fl_tc">关注腾讯微博</string>
+    <string name="sm_item_share_view">摇一摇截屏分享</string>
+    <string name="sm_item_visit_website">关注官方网站</string>
+    <string name="sm_item_about">Demo版本 Ver. %s</string>
+    <string name="plz_choose_wechat">请选择微信客户端完成操作</string>
+    <string name="get_token_format">获取%s的AccessToken</string>
+    <string name="get_user_info_format">获取%s授权用户资料</string>
+    <string name="get_other_info_format">获取%s其他用户资料</string>
+    <string name="share_to_format">分享到%s</string>
+
+    <string name="demo_share_all_gui">分享全部（有分享界面）</string>
+    <string name="demo_share_all">分享全部（无界面，直接分享）</string>
+    <string name="demo_get_access_token">获取AccessToken</string>
+    <string name="demo_get_my_info">获取授权用户资料</string>
+    <string name="demo_get_other_info">获取其他用户资料</string>
+
+    <string name="get_sina_friends_list">获取新浪微博关注列表</string>
+    <string name="get_tencent_friends_list">获取腾讯微博关注列表</string>
+    <string name="customer_douban">搜索用户</string>
+    <string name="customer_facebook">获取通知列表</string>
+    <string name="customer_nemb">获取推荐话题</string>
+    <string name="customer_renren">上传照片到用户的相册</string>
+    <string name="customer_sina">获取微博主页列表</string>
+    <string name="customer_qzone">发表日志到QQ空间</string>
+    <string name="customer_tencent">获取我的粉丝列表</string>
+    <string name="customer_twitter">获取主页列表</string>
+    <string name="customer_kaixin">获取可能认识的人</string>
+    <string name="customer_sohu">获取好友列表</string>
+    <string name="customer_youdao">获取笔记本列表</string>
+    <string name="customer_suishenkan">获取搜狐随身看书签列表</string>
+    <string name="customer_tumblr">获取Tumblr用户Post列表</string>
+
+    <string name="not_yet_authorized">尚未授权</string>
+    <string name="share_content">ShareSDK for Android不仅集成简单、支持如QQ好友、微信、新浪微博、腾讯微博等所有社交平台，而且还有强大的统计分析管理后台，实时了解用户、信息流、回流率、传播效应等数据，详情见官网http://mob.com @Mob移动开发者服务平台</string>
+    <string name="share_content_short">ShareSDK不仅集成简单、支持如微信、新浪微博、腾讯微博等平台，还有强大的统计分析管理后台，实时了解用户、信息流、回流率、传播效应等数据，详情见官网http://mob.com @Mob移动开发者服务平台</string>
+    <string name="evenote_title">ShareSDK是一个神奇的SDK</string>
+
+    <string name="update">文字分享</string>
+    <string name="image_upload">图片分享（本地图片）</string>
+    <string name="image_upload_bitmap">图片分享（Bitmap对象）</string>
+    <string name="image_upload_url">图片分享（网络图片）</string>
+    <string name="emoji_upload">表情分享（本地图片）</string>
+    <string name="emoji_upload_url">表情分享（网络图片）</string>
+    <string name="emoji_upload_bm">表情分享（Bitmap对象）</string>
+    <string name="music_upload">音乐分享</string>
+    <string name="video_upload">视频分享</string>
+    <string name="webpage_upload">网页分享（本地图片）</string>
+    <string name="webpage_upload_bitmap">网页分享（Bitmap对象）</string>
+    <string name="webpage_upload_url">网页分享（网络图片）</string>
+    <string name="app_upload">应用分享（携带文件）</string>
+    <string name="app_upload_extinfo">应用分享（携带脚本）</string>
+    <string name="file_upload">文件分享</string>
+    <string name="share_to_wechat">微信好友</string>
+    <string name="share_to_moment">微信朋友圈</string>
+    <string name="share_to_favorite">微信收藏</string>
+    <string name="wechat_demo_title">微信分享Demo标题</string>
+    <string name="qzone_add_blog_sample"><h1>QQ互联</h1><font color='red'>轻松分享,</font><font color='green'>快乐生活。</font><a href='http://connect.qq.com'>详情请看。</a><img src='http://imgcache.qq.com/ptlogin/head/1_100.gif'></img></string>
+    <string name="wechat_client_is_not_installed_correctly">微信客户端未安装或版本太旧</string>
+    <string name="wechat_client_not_support_following_operation">微信客户端不支持第三方应用执行关注功能</string>
+    <string name="share_to_yixin">易信好友</string>
+    <string name="share_to_yixin_moment">易信朋友圈</string>
+    <string name="share_to_yixin_favorite">易信收藏</string>
+    <string name="yixin_demo_title">易信分享Demo标题</string>
+    <string name="receive_rewards">恭喜你得到%s个金币！</string>
+    <string name="buy_success">购买成功</string>
+    <string name="buy_failed">购买失败</string>
+    <string name="laiwang">来往</string>
+    <string name="qzone_customer_share_style">自定义QQ空间分享风格</string>
+    <string name="qq_share_way">请选择分享方式</string>
+    <string name="qq_share_from_qqlogin">QQ/QZone登录发微博</string>
+    <string name="qq_share_from_tlogin">腾讯微博登录发微博</string>
+    <string name="title_remind">提示</string>
+    <string name="custom_content">确认拨打电话:</string>
+    <string name="cart_choose_distridate">请选择</string>
+    <string name="cart_choose_dstritype">请选择</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="startApp">立即体验</string>
+    <string name="switch_store_list">切换到门店列表</string>
+    <string name="commit_order_success">支付成功</string>
+    <string name="cart_no_item">购物车暂无商品</string>
+    <string name="pleaseinputsearch">搜索商品</string>
+    <string name="removecart">确认要清空购物车吗？</string>
+    <string name="clear">清空</string>
+    <string name="signorderexception">加密订单数据异常</string>
+    <string name="choose_pay_type">请选择</string>
+    <string name="input_reiceveaddress">请填写收货地址</string>
+    <string name="no_support_weixin_pay">暂不支持微信支付</string>
+    <string name="no_support_smilecard">暂不支持微笑卡支付</string>
+    <string name="success">操作成功</string>
+    <string name="input_sms_code">请填写短信验证码</string>
+    <string name="smscode_sended">短信验证码已发送</string>
+    <string name="no_support_voucher">功能即将上线,敬请期待</string>
+    <string name="smilecardbalance_no_full">微笑卡余额不足，请充值</string>
+    <string name="tobecontinue">功能即将上线,敬请期待</string>
+    <string name="store_not_open">此门店暂无客服电话</string>
+    <string name="back_password_success">找回密码成功</string>
+    <string name="back_password_error">找回密码异常</string>
+    <string name="no_support_score">功能即将上线,敬请期待</string>
+    <string name="pay_success">支付成功</string>
+    <string name="input_cart_choose_dstritype">请选择配送方式</string>
+    <string name="input_cart_choose_distridate">请选择配送时间</string>
+    <string name="input_choose_pay_type">请选择支付方式</string>
+    <string name="interface_error">后台支付接口异常</string>
+    <string name="receive_goods_success">确认收货成功</string>
+    <string name="pay_error">支付失败</string>
+    <string name="default_cs_phone">4001770666</string>
+    <string name="register_success">注册成功</string>
+    <string name="phonenum_error">手机号码格式不正确</string>
+    <string name="cancle_order">您确定要取消订单吗</string>
+    <string name="default_money_number">¥ 0.00</string>
+    <string name="support_alipay">暂只支持支付宝充值</string>
+    <string name="interface_timeout">接口超时</string>
+    <string name="out_time">亲，您的手机网络不太通畅喔~</string>
+    <string name="reload">重新加载</string>
+    <string name="phonenum_notnull">手机号码不能为空</string>
+    <string name="againinputpas">再次输入密码</string>
+    <string name="newpassword_not_defficent">新密码和原密码相同，请重新输入</string>
+
+
+</resources>

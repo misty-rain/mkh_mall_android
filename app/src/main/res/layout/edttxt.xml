@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/textfield_normal"
+    >
+        <EditText
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/input_line_height"
+            android:inputType="number"
+            android:ems="10"
+            android:maxLength="6"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:background="@drawable/textfield_normal"
+            android:id="@+id/edtTxtCardNumber"/>
+    <View
+        android:layout_width="15dp"
+        android:layout_height="1px"
+        android:layout_gravity="center"
+        android:background="@color/black" />
+
+    <EditText
+        android:singleLine="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/input_line_height"
+        android:inputType="number"
+        android:ems="10"
+        android:maxLength="6"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:background="@drawable/textfield_normal"
+        android:id="@+id/edtTxtCardNumber2"/>
+    <View
+        android:layout_width="15dp"
+        android:layout_height="1px"
+        android:layout_gravity="center"
+        android:background="@color/black" />
+    <EditText
+        android:singleLine="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/input_line_height"
+        android:inputType="number"
+        android:ems="10"
+        android:maxLength="4"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:background="@drawable/textfield_normal"
+        android:id="@+id/edtTxtCardNumber3"/>
+
+
+
+</LinearLayout>

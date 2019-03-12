@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="input_user_name_hint">请输入您的账号</string>
+    <string name="input_user_pwd_hint">请输入您的密码</string>
+    <string name="input_user_name_format_error">用户名格式不正确</string>
+    <string name="input_user_name_or_pwd_error">用户名或密码不正确，请重新输入</string>
+</resources>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:toggle="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/default_background_color"
+              android:orientation="vertical">
+
+    <include layout="@layout/distribution_tips_layout"/>
+
+    <View style="@style/cut_line_for_cart"/>
+
+    <include layout="@layout/cart_receiveaddress"/>
+
+    <View style="@style/cut_line_for_cart"/>
+
+    <LinearLayout
+        android:id="@+id/llydistrdate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/feedback_editlayout_bg">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="@string/cart_bottom_distribution_date"
+            android:textColor="@color/cart_title_color"
+            android:textSize="@dimen/text_size3"
+            />
+
+        <TextView
+            android:id="@+id/txtdistridate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="3"
+            android:gravity="right|center"
+            android:text="@string/cart_choose_distridate"
+            android:textColor="@color/main_black"
+            android:textSize="@dimen/text_size3"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="3dp"
+            android:gravity="center"
+            android:src="@mipmap/ic_arrow_right"/>
+    </LinearLayout>
+
+    <View style="@style/cut_line_for_cart"/>
+
+    <LinearLayout
+        android:id="@+id/llydistype"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@mipmap/feedback_editlayout_bg">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="@string/cart_bottom_dstribution_type"
+            android:textColor="@color/cart_title_color"
+            android:textSize="@dimen/text_size_16">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtdistritype"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="3"
+            android:gravity="right|center"
+            android:text="@string/cart_choose_dstritype"
+            android:textColor="@color/main_black"
+            android:textSize="@dimen/text_size3"/>
+        />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:src="@mipmap/ic_arrow_right"/>
+    </LinearLayout>
+
+    <View
+        style="@style/cut_line_for_cart"
+        android:layout_marginTop="10dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/llypaytype"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@mipmap/feedback_editlayout_bg">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="@string/cart_bottom_pay_type"
+            android:textColor="@color/cart_title_color"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/txtcartpaytype"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="3"
+            android:gravity="right|center"
+            android:text="@string/choose_pay_type"
+            android:textColor="@color/main_black"
+            android:textSize="@dimen/text_size3"/>
+
+        <ImageView
+            android:id="@+id/img_wipeamount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:src="@mipmap/ic_arrow_right"
+            />
+    </LinearLayout>
+
+    <View style="@style/cut_line_for_cart"/>
+
+    <LinearLayout
+        android:id="@+id/llypreferentialticket"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@mipmap/feedback_editlayout_bg">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="@string/cart_bottom_preferential_ticket"
+            android:textColor="@color/cart_title_color"
+            android:textSize="@dimen/text_size_16">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtpreferential_ticket"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="3"
+            android:gravity="right|center"
+            android:text="@string/choose_pay_type"
+            android:textColor="@color/main_black"
+            android:textSize="@dimen/text_size3"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:src="@mipmap/ic_arrow_right"/>
+    </LinearLayout>
+
+    <View style="@style/cut_line_for_cart"/>
+
+    <LinearLayout
+        android:id="@+id/llyscore"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@mipmap/feedback_editlayout_bg">
+
+        <TextView
+            android:id="@+id/txtcurrpoint"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="积分抵扣"
+            android:textColor="@color/cart_title_color"
+            android:textSize="@dimen/text_size_16">
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="@color/main_black"
+            android:textSize="@dimen/text_size_16"/>
+
+        <com.mkh.mobilemall.ui.widget.togglebutton.ToggleButton
+            android:id="@+id/toggleButton01"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            toggle:onColor="@color/main_green">
+        </com.mkh.mobilemall.ui.widget.togglebutton.ToggleButton>
+
+    </LinearLayout>
+
+    <View style="@style/cut_line_for_cart"
+        />
+
+    <View
+        style="@style/cut_line_for_cart"
+        android:layout_marginTop="10dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/llyorderremark"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+
+        android:background="@mipmap/feedback_editlayout_bg">
+
+        <EditText
+            android:id="@+id/edtorderSummary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/cart_bottom_order_remark"
+            android:textColor="@color/main_black"
+            android:textColorHint="@color/main_gray"
+            android:textSize="@dimen/text_size_16">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llyprice"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+
+        android:background="@mipmap/feedback_editlayout_bg"
+
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text="合计:78.00"
+            android:textColor="@color/red"
+            android:textSize="23sp"/>
+
+        <TextView
+            android:id="@+id/txtdiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text="折扣:0.00"
+            android:textColor="@color/mediumseagreen"
+            android:textSize="@dimen/text_size_17"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+
+
+        android:orientation="vertical"
+        >
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
